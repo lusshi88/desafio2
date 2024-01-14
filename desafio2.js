@@ -57,13 +57,13 @@ class ProductManager {
     }
   }
   
-  // Create an instance of the ProductManager class
+  
   const productManager = new ProductManager();
   
-  // Call getProducts and it should return an empty array []
+  
   console.log(productManager.getProducts());
   
-  // Call addProduct and add a new product
+ 
   try {
     const newProduct = productManager.addProduct(
       "producto prueba",
@@ -78,13 +78,13 @@ class ProductManager {
     console.error(error.message);
   }
   
-  // Call getProducts again and it should return the product added
+  
   console.log(productManager.getProducts());
   
-  // Call getProductById and it should return the product with the specified id
+  
   console.log(productManager.getProductById(1));
   
-  // Call updateProduct and update a field of the product
+  
   try {
     const updatedProduct = productManager.updateProduct(
       1,
@@ -95,7 +95,7 @@ class ProductManager {
     console.error(error.message);
   }
   
-  // Call deleteProduct and it should delete the product
+ 
   try {
     productManager.deleteProduct(1);
     console.log(productManager.getProducts());
